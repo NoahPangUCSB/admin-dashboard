@@ -34,12 +34,13 @@ body {
   font-size: x-large;
   padding: 20px;
   font-weight: bold;
+  width: 230px;
 }
 
 .main-content {
   background-color: #e5e7eb;
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 5fr 2fr;
   grid-template-rows: 1fr 1fr;
 }
 
@@ -279,6 +280,48 @@ body {
 
 .trending {
   grid-column: 2 / 3;
+  display: grid;
+  grid-template-rows: 30px auto;
+  gap: 10px;
+}
+
+.trending-card {
+    background-color: white;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+    align-content: space-between;
+}
+
+.user {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 5px;
+}
+
+.user .profile-picture {
+    grid-column: 1 / 2;
+}
+
+.user p {
+    align-self: start;
+    margin: 0;
+}
+.user .username {
+}
+
+.user .caption {
+    color: #6b7280;
+}
+
+.user .username, .user .caption {
+    font-weight: normal;
+    font-size: medium;
+}
+
+.trending .profile-picture img {
+    width: 50px;
 }
 
 .projects,
